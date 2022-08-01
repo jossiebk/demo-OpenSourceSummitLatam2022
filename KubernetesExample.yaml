@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: webtest
+  name: webtest
+  namespace: My_namespace
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: webtest
+  template:
+    metadata:
+      labels:
+        app: webtest
+    spec:
+      containers:
+      - image: jossie/apache2_onramp
+        name: webtest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: webtest
+  name: webtest
+  namespace: My_namespace
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: webtest
+  type: ClusterIP
