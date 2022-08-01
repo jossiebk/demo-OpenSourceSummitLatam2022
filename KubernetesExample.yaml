@@ -4,7 +4,7 @@ metadata:
   labels:
     app: webtest
   name: webtest
-  namespace: My_namespace
+  namespace: default
 spec:
   replicas: 5
   selector:
@@ -16,8 +16,10 @@ spec:
         app: webtest
     spec:
       containers:
-      - image: jossie/apache2_onramp
-        name: webtest
+      - image: jossie/osslatam2022
+        name: osslatam2022
+        ports:
+          - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -25,12 +27,12 @@ metadata:
   labels:
     app: webtest
   name: webtest
-  namespace: My_namespace
+  namespace: default
 spec:
   ports:
-  - port: 8080
-    protocol: TCP
-    targetPort: 8080
+  - port: 80
+    targetPort: 80
+    nodePort: 30004
   selector:
     app: webtest
-  type: ClusterIP
+  type: LoadBalancer
