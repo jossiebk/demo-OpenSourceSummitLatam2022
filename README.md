@@ -105,7 +105,14 @@ Los contenedores utilizados para la definicion de la arquitectura en Experimento
 
 ## Desplegar Arquitectura
 
-12.  Ingresar a la carpeta ExperimentosTesis/Arquitectura/Servidor/ y ejecutar el despliegue.
+ Dentro de la carpeta del repositorio ejecutar el despliegue.
+
+```
+kubectl apply -f KubernetesExample.yaml
+```  
+
+## Comandos utiles
+
 ```
 kubectl get namespaces
 ```    
