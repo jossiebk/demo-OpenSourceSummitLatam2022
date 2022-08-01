@@ -39,15 +39,15 @@ Ejemplo de despliegue de una arquitectura simple con Kubernetes.
 
     - Se abrira una ventana en el navegador en caso aplique donde pedira seleccionar una cuenta con la cual continuar.
   
-    ![Paso4.2](Imagenes/segunda.png)
+    ![Paso4.2](Imagenes/segunda.PNG)
 
      - Permitimos el acceso y se mostrara una ventana en la cual confirma que hemos podido acceder, para lo cual podemos regresar a la terminal.
   
-    ![Paso4.3](Imagenes/tercera.png)
+    ![Paso4.3](Imagenes/tercera.PNG)
 
 5. Al regresar a la terminal solicita seleccionar un proyecto existente en nuestra cuenta de Google Cloud, el cual se debe seleccionar ingresando su respectivo numero.
    
-    ![Paso5](Imagenes/cuarta.png)
+    ![Paso5](Imagenes/cuarta.PNG)
 
 6. Seleccionamos la opcion para configurar una region y zona por default para trabajar y presionar "Y".
 
