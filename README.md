@@ -35,7 +35,7 @@ Ejemplo de despliegue de una arquitectura simple con Kubernetes.
    ```
     -  Al inicializar se mostrara un grupo de opciones similar a la siguiente. 
   
-    ![Paso4.1](Imagenes/primera.png)
+    ![Paso4.1](Imagenes/primera.PNG)
 
     - Se abrira una ventana en el navegador en caso aplique donde pedira seleccionar una cuenta con la cual continuar.
   
